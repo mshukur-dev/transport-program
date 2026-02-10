@@ -4,7 +4,7 @@ body {
     font-family: "Space Grotesk", sans-serif;
     font-size: 20px;
     color: #3D3D3D;
-    line-height: 130%;
+    line-height: 170%;
 }
 
 a {
@@ -14,7 +14,7 @@ a {
 
 h1 {
     font-size: 80px;
-    line-height: 75%;
+    line-height: 100%;
     font-weight: 700;
     color: #FFFFFF;
 }
@@ -22,13 +22,13 @@ h1 {
 h2 {
     font-size: 60px;
     color: inherit;
-    line-height: 75%;
+    line-height: 100%;
     font-weight: 700;
 }
 
 h3 {
     font-size: 36px;
-    line-height: 75%;
+    line-height: 100%;
     font-weight: 700;
     color: inherit;
 }
@@ -55,13 +55,32 @@ img {
     display: none;
 }
 
+.btn {
+    padding: 12px 30px;
+    background-color: #60C880;
+    color: white;
+    border-radius: 200px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
 
 
 
 .header {
+    position: absolute;
+    top: 0;
     padding: 20px 0;
     width: 100%;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.282);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.496);
 }
 
 .header_main {
@@ -69,7 +88,7 @@ img {
     align-items: center;
     justify-content: space-between;
     font-size: 18px;
-    /* color: ; */
+    color: white;
 }
 
 .header_link {
@@ -91,6 +110,36 @@ img {
 
 
 
+.hero {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    min-height: 100vh;
+    background: url(../img/hero.png) center/cover no-repeat;
+}
+
+.hero .container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+}
+
+.hero_arrow {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.hero_txt {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+    max-width: 600px;
+}
+
+
 
 
 
@@ -103,6 +152,18 @@ img {
         font-size: 16px;
     }
 
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
     .view {
         display: block;
     }
@@ -111,9 +172,16 @@ img {
         display: none;
     }
 
+    .btn {
+        font-size: 16px;
+    }
 
 
 
+
+    .header {
+        border: 0;
+    }
 
     .header_main {
         font-size: 14px;
@@ -126,4 +194,23 @@ img {
     .header_contact {
         gap: 15px;
     }
+
+
+
+
+
+    .hero {
+        background: linear-gradient(to top, #1B1E3100, #1B1E31E5), url(../img/hero.png) no-repeat center/cover;
+    }
+
+    .hero .container {
+        padding-top: 150px;
+        align-items: start;
+    }
+
+    .hero_arrow {
+        width: 80px;
+        right: 20px;
+    }
+
 }
