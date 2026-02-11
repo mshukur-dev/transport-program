@@ -335,7 +335,7 @@ img {
 
 
 
-.stack_wrapper{
+.stack_wrapper {
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -344,21 +344,24 @@ img {
 
 }
 
-.stack_img{
+.stack_img {
     display: flex;
     padding: 10px;
     border: 1px solid #00000043;
 }
 
-.img_stack{
+.img_stack {
     display: flex;
 }
 
 
 
 
+.news {
+    margin-bottom: 50px;
+}
 
-.news_intro{
+.news_intro {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -367,13 +370,14 @@ img {
 
 
 
-.news_wrapper{
+.news_wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     margin-top: 50px;
 }
-.news_box{
+
+.news_box {
     display: flex;
     flex-direction: column;
     gap: 35px;
@@ -382,20 +386,23 @@ img {
 }
 
 
-.qustion{
+.qustion {
     background-color: #60C880;
     padding: 80px 0;
 }
-.white_btn{
+
+.white_btn {
     background-color: white;
     color: #3D3D3D;
 }
-.form{
+
+.form {
     display: flex;
     gap: 30px;
     margin-top: 80px;
 }
-input{
+
+input {
     background-color: transparent;
     border: 1px solid white;
     border-radius: 200px;
@@ -403,7 +410,7 @@ input{
     padding: 10px 24px;
 }
 
-input::placeholder{
+input::placeholder {
     color: white;
 }
 
@@ -414,35 +421,37 @@ input::placeholder{
 
 
 
-.footer{
+.footer {
     padding: 100px 0 0;
     background-color: #1B1E31;
 }
 
-.footer .container{
+.footer .container {
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
 }
 
-.footer_box{
+.footer_box {
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
 
 
-.footer_bottom .container{
+.footer_bottom .container {
     display: flex;
     justify-content: space-between;
 }
 
-.gray{
+.gray {
     color: gray;
 }
-.footer_bottom{
+
+.footer_bottom {
     border-top: 1px solid #00000057;
 }
+
 @media (max-width: 510px) {
     body {
         font-size: 16px;
@@ -605,28 +614,32 @@ input::placeholder{
         overflow-x: auto;
     }
 
-    .stack_wrapper{
+    .stack_wrapper {
         flex-direction: column;
     }
-    .news_wrapper{
+
+    .news_wrapper {
         grid-template-columns: 1fr;
     }
 
-    .qustion{
+    .qustion {
         padding: 30px 0;
     }
-    .form{
+
+    .form {
         flex-direction: column;
     }
+
     input {
         width: 100%;
-        padding: 20px ;
+        padding: 20px;
     }
 
-    .footer .container{
+    .footer .container {
         justify-content: center;
     }
-    .footer_box{
+
+    .footer_box {
         text-align: center;
     }
 }
