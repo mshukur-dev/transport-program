@@ -80,7 +80,7 @@ img {
     top: 0;
     padding: 20px 0;
     width: 100%;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.496);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.289);
 }
 
 .header_main {
@@ -111,6 +111,7 @@ img {
 
 
 .hero {
+    margin-bottom: 100px;
     padding-top: 10px;
     padding-bottom: 30px;
     min-height: 100vh;
@@ -140,7 +141,31 @@ img {
 }
 
 
+.inovation .container {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
 
+.inovation_txt {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    max-width: 730px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.num {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 
 
 
@@ -200,6 +225,7 @@ img {
 
 
     .hero {
+        margin-bottom: 50px;
         background: linear-gradient(to top, #1B1E3100, #1B1E31E5), url(../img/hero.png) no-repeat center/cover;
     }
 
@@ -211,6 +237,13 @@ img {
     .hero_arrow {
         width: 80px;
         right: 20px;
+    }
+
+
+
+    .inovation .container {
+        flex-direction: column;
+        gap: 20px;
     }
 
 }
